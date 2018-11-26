@@ -1,0 +1,28 @@
+{
+  "name": "css_practice",
+  "version": "1.0.0",
+  "description": "project to practice advanced css",
+  "main": "index.js",
+  "scripts": {
+    "compile:sass":"node-sass sass/main.scss css/style.css -w"
+
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/OlegMoshkovich/CSS_practice.git"
+  },
+  "keywords": [
+    "css",
+    "practice",
+    "sass"
+  ],
+  "author": "Oleg",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/OlegMoshkovich/CSS_practice/issues"
+  },
+  "homepage": "https://github.com/OlegMoshkovich/CSS_practice#readme",
+  "dependencies": {
+    "node-sass": "^4.10.0"
+  }
+}
