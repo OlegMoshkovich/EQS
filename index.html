@@ -14,26 +14,25 @@
     </head>
 
     <body>
-
         <div class="navigation">
           <div class="navigation__title">Oleg Moshkovich</div>
           <input type="checkbox" class="navigation__checkbox" id = 'navi-toggle'>
           <label for="navi-toggle" class="navigation__button">
-            <div class = "navigation__button-title">info</div>
+            <span class = "navigation__icon">info</span>
+              <span class = "navigation__icon-close">close</span>
           </label>
-
           <div class="navigation__background">&nbsp;</div>
-
           <div class="navigation__nav">
             <ul class="navigation__list">
-              <li class="navigation__item"><a href="#" class="navigation__link">Information</a></li>
+              <li class="navigation__item"><a href="#" class="navigation__link">Story</a></li>
               <li class="navigation__item"><a href="#" class="navigation__link">Format 1 - pure css</a></li>
               <li class="navigation__item"><a href="#" class="navigation__link">Format 2 - JS</a></li>
-              <li class="navigation__item"><a href="#" class="navigation__link">Format 3 - React</a></li>
+              <li class="navigation__item"><a href="http://www.olegmoshkovich.cc/" class="navigation__link" target=_blank>Format 3 - React</a></li>
             </ul>
           </div>
-
         </div>
+
+        <section id ="top" ></section>
 
         <header class ='header'>
           <div class="header__logo-box">
@@ -44,16 +43,15 @@
           <div class="header__text-box">
             <h1 class = "heading-primary">
               <p>Hi, I’m Oleg.</p>
-              <p>My Focus is product design and front end engineering.</p>
+              <p>My Focus is <a href="#section-project" class = "link">product design</a> and <a href="https://github.com/OlegMoshkovich" target=_blank class = "link">front end engineering.</a></p>
               <p>This portfolio contains some of my work completed over the last 7 years.</p>
             </h1>
-
             <!-- <a href="#" class = "btn btn--white btn--animated">discover our tours</a> -->
           </div>
 
         </header>
 
-        <section class = "section-project" >
+        <section class = "section-project" id ="section-project" >
           <div class="row">
             <div class="col-1-of-2">
               <img class = "work-image"src="img/project0/image2.png" alt="">
@@ -79,16 +77,16 @@
           </div>
           <div class="row">
             <div class="col-1-of-4">
-              <img class = "work-image"src="img/project0/image2.png" alt="">
+              <img class = "work-image"src="img/gs/gs1.png" alt="">
             </div>
             <div class="col-1-of-4">
-              <img class = "work-image"src="img/project0/image2.png" alt="">
+              <img class = "work-image"src="img/gs/gs2.png" alt="">
             </div>
             <div class="col-1-of-4">
-              <img class = "work-image"src="img/project0/image2.png" alt="">
+              <img class = "work-image"src="img/gs/gs3.png" alt="">
             </div>
             <div class="col-1-of-4">
-              <img class = "work-image"src="img/project0/image2.png" alt="">
+              <img class = "work-image"src="img/gs/gs4.png" alt="">
             </div>
           </div>
           <div class="header__project-box">
@@ -99,7 +97,7 @@
           </div>
           <div class="row">
             <div class="col-1-of-2">
-              <img class = "work-image"src="img/short/image/project1/image5.png" alt="">
+              <img class = "work-image"src="img/gs/WORLD.png" alt="">
             </div>
             <div class="col-1-of-2">
               <img class = "work-image-gif" src="img/short/image/project1/image_gif.gif" alt="">
@@ -112,19 +110,17 @@
           </h1>
           </div>
           <div class="row">
-            <div class="col-1-of-3">
-              <img class = "work-image"src="img/short/image/project1/image7.png" alt="">
+            <div class="col-1-of-2">
+              <img class = "work-image"src="img/gs/image7.png" alt="">
             </div>
-            <div class="col-1-of-3">
-              <img class = "work-image"src="img/short/image/project1/image8.png" alt="">
+            <div class="col-1-of-2">
+              <img class = "work-image"src="img/gs/image8.png" alt="">
             </div>
-            <div class="col-1-of-3">
-              <img class = "work-image"src="img/short/image/project1/image9.png" alt="">
-            </div>
+
           </div>
           <div class="header__project-box">
           <h1 class = "heading-primary--project">
-            High fidelity React Native prototype enabled the team to extensively test the design with the 3 groups of users in
+            <a href="https://expo.io/@olegmoshkovich" class = "link" target = _blank>High fidelity React Native prototype</a> enabled the team to extensively test the design with the 3 groups of users in
             New York,
             Dallas,
             Washington.
@@ -133,19 +129,18 @@
           </div>
           <div class="row">
             <div class="col-1-of-2">
-              <img class = "work-image"src="img/short/image/project1/image10.png" alt="">
+              <img class = "work-image"src="img/gs/users.png" alt="">
             </div>
             <div class="col-1-of-2">
-              <img class = "work-image"src="img/short/image/project1/image11.png" alt="">
+              <img class = "work-image"src="img/gs/prototype.png" alt="">
             </div>
           </div>
           <div class="header__project-box">
           <h1 class = "heading-primary--project">
-          In the initial stages of the project my focus was product design, which shifted to front end developement during the prototyping phase.
+          In the initial stages of the project my focus <span class="link">product design</span> , which shifted to front end developement during the prototyping phase.
           </h1>
           </div>
         </section>
-
         <section class = "section-project" >
           <div class="row">
             <div class="col-1-of-2">
@@ -168,10 +163,10 @@
           </div>
 
           <div class="row">
-            <div class="col-1-of-3">
+            <div class="col-1-of-2">
               <img class = "work-image"src="img/short/image/project3/image7.png" alt="">
             </div>
-            <div class="col-1-of-3">
+            <div class="col-1-of-2">
               <img class = "work-image"src="img/short/image/project3/image9.png" alt="">
             </div>
             <div class="col-1-of-3">
@@ -198,43 +193,12 @@
           </div>
         </section>
 
+        <div style="text-align:center">
+                  <a href="#top" class = "btn btn--white btn--animated">up</a>
+        </div>
 
-          <!-- <section class="section-about">
-            <div class="u-center-text u-margin-bottom-big">
-              <h2 class="heading-secondary">
-                Exciting Tours for people
-              </h2>
-            </div>
 
-            <div class="row">
 
-              <div class="col-1-of-2">
-                <h3 class="heading-tertiary u-margin-bottom-small">first heading</h3>
-                <p class="paragraph u-center-right">
-                  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsum at dolor beatae expedita! Tempora, ipsa. Libero quaerat esse ipsam minima! Molestiae quidem esse, quia excepturi deserunt. Saepe minus alias itaque.
-                </p>
-                <h3 class="heading-tertiary u-margin-bottom-small">second heading</h3>
-                <p class="paragraph">
-                  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsum at dolor beatae expedita! Tempora, ipsa. Libero quaerat esse ipsam minima! Molestiae quidem esse, quia excepturi deserunt. Saepe minus alias itaque.
-                </p>
-                <a href="#" class="btn-text">Learn more &rarr; </a>
-              </div>
-
-              <div class="col-1-of-2">
-                <h3 class="heading-tertiary u-margin-bottom-small">first heading</h3>
-                <p class="paragraph u-center-right">
-                  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsum at dolor beatae expedita! Tempora, ipsa. Libero quaerat esse ipsam minima! Molestiae quidem esse, quia excepturi deserunt. Saepe minus alias itaque.
-                </p>
-                <h3 class="heading-tertiary u-margin-bottom-small">second heading</h3>
-                <p class="paragraph">
-                  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsum at dolor beatae expedita! Tempora, ipsa. Libero quaerat esse ipsam minima! Molestiae quidem esse, quia excepturi deserunt. Saepe minus alias itaque.
-                </p>
-                <a href="#" class="btn-text">Learn more &rarr; </a>
-              </div>
-
-            </div> -->
-
-          </section>
         </main>
 <!--
         <section class = "grid-test">

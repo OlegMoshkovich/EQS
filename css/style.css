@@ -124,6 +124,11 @@ body {
   width: 114rem;
   height: 100%; }
 
+.link {
+  background-color: #0029FF;
+  text-decoration: none;
+  color: #fff; }
+
 .btn:link, .btn:visited {
   text-transform: uppercase;
   text-decoration: none;
@@ -255,7 +260,6 @@ body {
 
 .navigation__title {
   position: fixed;
-  background-color: #fff;
   top: 6.5rem;
   left: 10rem;
   font-size: 2rem; }
@@ -275,12 +279,24 @@ body {
   z-index: 102;
   border-radius: 50%;
   height: 6.5rem;
-  width: 6.5rem; }
-  .navigation__button-title {
+  width: 6.5rem;
+  -webkit-touch-callout: none;
+  user-select: none;
+  text-align: center; }
+
+.navigation__icon {
+  font-size: 1.5rem;
+  color: #fff;
+  position: absolute;
+  top: 2.2rem;
+  left: 3.2rem; }
+  .navigation__icon-close {
+    font-size: 1.5rem;
     color: #fff;
     position: absolute;
-    top: 2.1rem;
-    left: 3.2rem; }
+    top: 2.2rem;
+    left: 2.2rem;
+    display: none; }
 
 .navigation__background {
   height: 6.5rem;
@@ -326,7 +342,7 @@ body {
   text-decoration: underline; }
 
 .navigation__link:active {
-  background-color: orangered; }
+  background-color: red; }
 
 .navigation__item {
   padding: 1rem; }
@@ -337,3 +353,9 @@ body {
 .navigation__checkbox:checked ~ .navigation__nav {
   width: 100%;
   opacity: 1; }
+
+.navigation__checkbox:checked + .navigation__button .navigation__icon {
+  display: none; }
+
+.navigation__checkbox:checked + .navigation__button .navigation__icon-close {
+  display: inline; }
