@@ -129,6 +129,9 @@ body {
   text-decoration: none;
   color: #fff; }
 
+.link:hover {
+  text-decoration: underline; }
+
 .btn:link, .btn:visited {
   text-transform: uppercase;
   text-decoration: none;
@@ -204,8 +207,17 @@ body {
 .work-image {
   width: 100%; }
 
+.work-image-title {
+  width: 100%;
+  position: relative; }
+
 .work-image-gif {
   width: 70%; }
+
+.section-open {
+  text-align: center;
+  top: -20rem;
+  z-index: 1; }
 
 .header {
   height: 100vh;
@@ -231,12 +243,18 @@ body {
     width: 85vw;
     left: 50%;
     text-align: left; }
+  .header__project-box-opening {
+    margin-left: 10rem;
+    width: 85vw;
+    left: 50%;
+    text-align: left; }
 
 .row {
   max-width: 114rem;
   margin: 0 auto; }
   .row:not(:last-child) {
-    margin-bottom: 8rem; }
+    margin-bottom: 8rem;
+    margin-top: 8rem; }
   .row::after {
     content: "";
     display: table;
@@ -259,10 +277,11 @@ body {
     width: calc( 3*((100% - 3 * 6rem) / 4) + 2*6rem); }
 
 .navigation__title {
-  position: fixed;
+  position: absolute;
   top: 6.5rem;
   left: 10rem;
-  font-size: 2rem; }
+  font-size: 2rem;
+  z-index: 100; }
 
 .navigation__checkbox {
   position: fixed;
@@ -353,6 +372,9 @@ body {
 .navigation__checkbox:checked ~ .navigation__nav {
   width: 100%;
   opacity: 1; }
+
+.navigation__button:hover .navigation__icon {
+  left: 2.2rem; }
 
 .navigation__checkbox:checked + .navigation__button .navigation__icon {
   display: none; }

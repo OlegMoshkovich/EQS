@@ -1,11 +1,12 @@
 .navigation{
 
   &__title{
-    position:fixed;
+    position:absolute;
     // background-color: white;
     top:6.5rem;
     left:10rem;
     font-size:2rem;
+    z-index: 100;
   };
 
   &__checkbox{
@@ -113,6 +114,9 @@
   &__checkbox:checked ~ &__nav{
     width:100%;
     opacity:1;
+  }
+  &__button:hover &__icon {
+    left:2.2rem;
   }
 
 
