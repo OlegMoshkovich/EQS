@@ -17,6 +17,7 @@
         <div class="navigation">
           <div class="navigation__title">Oleg Moshkovich</div>
           <input type="checkbox" class="navigation__checkbox" id = 'navi-toggle'>
+
           <label for="navi-toggle" class="navigation__button">
             <span class = "navigation__icon">info</span>
               <span class = "navigation__icon-close">close</span>
@@ -25,7 +26,7 @@
           <div class="navigation__nav">
             <ul class="navigation__list">
               <li class="navigation__item"><a href="#" class="navigation__link">Story</a></li>
-              <li class="navigation__item"><a href="#" class="navigation__link">Format 1 - pure css</a></li>
+              <li class="navigation__item"><a href="#app_images" class="navigation__link"><label for="navi-toggle" >Format 1 - pure css</label></a></li>
               <li class="navigation__item"><a href="#" class="navigation__link">Format 2 - JS</a></li>
               <li class="navigation__item"><a href="http://www.olegmoshkovich.cc/" class="navigation__link" target=_blank>Format 3 - React</a></li>
             </ul>
@@ -57,7 +58,7 @@
               <img class = "work-image-title"src="img/project0/image2.png" alt="">
           </div>
 
-          <div class="header__project-box-opening">
+          <div class="header__project-box-opening" id = "app_images">
             <h1 class = "heading-primary--project">
               In 2017 omission.studio was engaged to develop the concept, the vision and the design for the Girls Scouts digital experience to be released in 2020.
               <p>We were a team of 4 multi-disciplinary product designers.</p>
@@ -66,18 +67,18 @@
             </h1>
           </div>
 
-          <div class="row">
+          <div class="row" >
             <div class="col-1-of-4">
-              <img class = "work-image"src="img/gs/gs1.png" alt="">
+              <a href="#popup1"><img class = "work-image"src="img/gs/gs1.png" alt=""></a>
             </div>
             <div class="col-1-of-4">
-              <img class = "work-image"src="img/gs/gs2.png" alt="">
+              <a href="#popup2"><img class = "work-image"src="img/gs/gs2.png" alt=""></a>
             </div>
             <div class="col-1-of-4">
-              <img class = "work-image"src="img/gs/gs3.png" alt="">
+              <a href="#popup3"><img class = "work-image"src="img/gs/gs3.png" alt=""></a>
             </div>
             <div class="col-1-of-4">
-              <img class = "work-image"src="img/gs/gs4.png" alt="">
+              <a href="#popup4" ><img class = "work-image"src="img/gs/gs4.png" alt=""></a>
             </div>
           </div>
 
@@ -96,7 +97,7 @@
 
           <div class="header__project-box">
             <h1 class = "heading-primary--project">
-              The product included fully customizable 3d avatar system and a multi-player game world developed in unity.
+              The product included fully customizable 3d avatar system and multi-player game world developed in unity.
             </h1>
           </div>
 
@@ -156,16 +157,50 @@
 
 
 
-        <div class="popup">
+        <div class="popup" id="popup1">
           <div class="popup__content">
                 <img src="img/gs/gs1.png" alt="zoom" class = "popup__img">
                 <h2 class="popup__text"> description of the image</h2>
-                <a href="#" class="btn"></a>
+                  <a href="#app_images" class="popup__close">&times;</a>
+                  <a href="#popup2" class="popup__right">&gt;</a>
+                  <a href="#popup4" class="popup__left">&lt;</a>
+
+
           </div>
         </div>
 
+        <div class="popup" id="popup2">
+          <div class="popup__content">
+                <img src="img/gs/gs2.png" alt="zoom" class = "popup__img">
+                <h2 class="popup__text"> description of the image</h2>
+                  <a href="#app_images" class="popup__close">&times;</a>
+                  <a href="#popup3" class="popup__right">&gt;</a>
+                  <a href="#popup1" class="popup__left">&lt;</a>
+          </div>
         </div>
 
+        <div class="popup" id="popup3">
+          <div class="popup__content">
+                <img src="img/gs/gs3.png" alt="zoom" class = "popup__img">
+                <h2 class="popup__text"> description of the image</h2>
+                  <a href="#app_images" class="popup__close">&times;</a>
+                  <a href="#popup4" class="popup__right">&gt;</a>
+                  <a href="#popup2" class="popup__left">&lt;</a>
+          </div>
+        </div>
+
+        <div class="popup" id="popup4">
+          <div class="popup__content">
+                <img src="img/gs/gs4.png" alt="zoom" class = "popup__img">
+                <h2 class="popup__text"> description of the image</h2>
+                  <a href="#app_images" class="popup__close">&times;</a>
+                  <a href="#popup1" class="popup__right">&gt;</a>
+                  <a href="#popup3" class="popup__left">&lt;</a>
+          </div>
+        </div>
+
+
+<footer class ="footer"></footer>
 
 
 

@@ -6,7 +6,7 @@
 
 .section-project{
   background-color:$color-white;
-  padding:25rem 0;
+  padding:0rem 0;
   // margin-top: -20vh;
 }
 
@@ -14,10 +14,8 @@
   width:100%;
 }
 .work-image-title{
-  width:100%;
+  width:80%;
   position:relative;
-
-
 
 }
 
@@ -26,8 +24,6 @@
 }
 
 .section-open{
-
   text-align: center;
-  top:-20rem;
   z-index: 1
 }
