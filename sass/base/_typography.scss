@@ -18,6 +18,7 @@ body {
   display: block;
   width:70vw;
   font-size:6rem;
+  font-weight:300;
   letter-spacing:.1rem;
   // text-transform: uppercase;
   backface-visibility: hidden;
@@ -28,7 +29,7 @@ body {
   font-size: 4rem;
   font-weight: 400;
   letter-spacing: 0rem;
-  animation-name: moveInLeft;
+  // animation-name: moveInLeft;
   // animation-duration: 3s;
   // animation-timing-function: ease-out;
   }
@@ -38,16 +39,26 @@ body {
   font-size: 2rem;
   font-weight: 700;
   letter-spacing: 1.74rem;
+  // animation-name: moveInRight;
+  // animation-duration: 3s;
+  }
+  &--project-main{
+  display: block;
+  font-size: 3rem;
+  font-weight: 600;
+  // letter-spacing: .1rem;
   animation-name: moveInRight;
-  animation-duration: 3s;
+  // animation-duration: 3s;
+  // margin-bottom: 6rem;
   }
   &--project{
   display: block;
   font-size: 3rem;
-  font-weight: 700;
+  font-weight: 100;
   letter-spacing: .1rem;
-  animation-name: moveInRight;
-  animation-duration: 3s;
+  // animation-name: moveInRight;
+  // animation-duration: 3s;
+  margin-bottom: 6rem;
   }
 }
 
