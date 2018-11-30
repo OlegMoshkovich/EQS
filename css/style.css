@@ -196,6 +196,39 @@ body {
 .btn-text:hover::after {
   width: 100%; }
 
+.popup {
+  font-size: 10rem;
+  height: 100vh;
+  width: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  background-color: rgba(0, 0, 0, 0.8);
+  z-index: 1000;
+  text-align: center; }
+  .popup__content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 75%;
+    height: 75vh;
+    background-color: white;
+    box-shadow: 0 2rem 4rem rgba(0, 0, 0, 0.2);
+    border-radius: 3px; }
+  .popup__img {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    transform: translate(-50%, -60%);
+    display: block;
+    width: 70%; }
+  .popup__text {
+    position: relative;
+    font-size: 2rem;
+    top: 90%; }
+
 .section-about {
   background-color: #f7f7f7;
   padding: 25rem 0; }
@@ -308,13 +341,13 @@ body {
   color: #fff;
   position: absolute;
   top: 2.2rem;
-  left: 3.2rem; }
+  left: 2.2rem; }
   .navigation__icon-close {
     font-size: 1.5rem;
     color: #fff;
     position: absolute;
     top: 2.2rem;
-    left: 2.2rem;
+    left: 1.7rem;
     display: none; }
 
 .navigation__background {

@@ -1,0 +1,32 @@
+.popup{
+  font-size: 10rem;
+  height:100vh;
+  width:100%;
+  position:fixed;
+  top:0;
+  left:0;
+  background-color: rgba(black, .8);
+  z-index:1000;
+  text-align: center;
+
+
+  &__content{
+    @include horizontalVertical;
+    width: 75%;
+    height:75vh;
+    background-color: white;
+    box-shadow: 0 2rem 4rem rgba(black, .2);
+    border-radius: 3px;
+  }
+  &__img{
+    @include horizontalVertical;
+    transform: translate(-50%,-60%);
+    display:block;
+    width:70%;
+  }
+  &__text{
+    position:relative;
+    font-size: 2rem;
+    top:90%;
+  }
+}
