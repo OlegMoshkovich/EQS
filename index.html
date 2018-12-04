@@ -37,21 +37,27 @@
           </div>
         </div>
 
-        <section class = "map">
+  <section class = "section-project" style='width:100vw; height:100vh; ' >
 
-          <div id='map' style='width:100vw; height:75vh;'></div>
+
+  <div id='map' style='width:100%; height:100%; '></div>
+
+
+
 
 
         </section>
 
 
-  <script>
-  mapboxgl.accessToken = 'pk.eyJ1Ijoib2xlZ21vc2hrb3ZpY2giLCJhIjoiY2pmeTFidnQzMGUwaDMycTd6aGlseXF6ayJ9._4zzVy5_Q5lPjIiN56SMyQ';
-  var map = new mapboxgl.Map({
-  container: 'map',
-  style: 'mapbox://styles/mapbox/streets-v10'
-  });
-  </script>
+        <script>
+        mapboxgl.accessToken = 'pk.eyJ1Ijoib2xlZ21vc2hrb3ZpY2giLCJhIjoiY2pmeTFidnQzMGUwaDMycTd6aGlseXF6ayJ9._4zzVy5_Q5lPjIiN56SMyQ';
+        const map = new mapboxgl.Map({
+        container: 'map',
+        style: 'mapbox://styles/olegmoshkovich/cjp9492xn012k2sl6u7fizjaq',
+        center: [11.000000, 42.000000],
+        zoom: 3.0
+        });
+        </script>
     </body>
 
 </html>
