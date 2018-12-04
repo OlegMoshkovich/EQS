@@ -14,6 +14,7 @@
   width:100%;
 }
 .work-image-title{
+
   width:80%;
   position:relative;
 
@@ -26,4 +27,19 @@
 .section-open{
   text-align: center;
   z-index: 1
+}
+
+.input{
+    width:20rem;
+    height:2rem;
+    font-size:70%;
+    margin: 0 auto;
+     border: none; /* <-- This thing here */
+     border:solid 1px #ccc;
+     border-radius: 10px;
+     text-align:center;
+
+}
+textarea:focus, input:focus{
+    outline: none;
 }

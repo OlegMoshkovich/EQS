@@ -4,10 +4,45 @@
     position:absolute;
     // background-color: white;
     top:6.5rem;
-    left:10rem;
+    left:10%;
     font-size:2rem;
     z-index: 100;
   };
+
+  &__search{
+    @include clearfix
+    font-size: 1.5rem;
+    color:$color-black;
+    position:fixed;
+    bottom:4.0rem;
+    left:43%;
+    text-align: 'center';
+    font-size:2rem;
+    z-index: 100;
+  };
+
+  &__description{
+    position:absolute;
+    // background-color: white;
+    top:6.5rem;
+    left:10%;
+    font-size:2rem;
+    z-index: 100;
+
+
+  }
+
+
+  &__description_image{
+
+    position:absolute;
+
+    top:9.5rem;
+    left:10%;
+    font-size:2rem;
+    z-index: 100;
+  }
+
 
   &__checkbox{
     position:fixed;
@@ -38,7 +73,7 @@
     color:$color-white;
     position:absolute;
     top:2.2rem;
-    left:1.05rem;
+    left:2rem;
 
     &-close{
       font-size: 1.5rem;
@@ -117,6 +152,7 @@
     font-size: 3rem;
     font-weight:100;
     list-style-type:none;
+    cursor: pointer;
 
     &:hover{
       text-decoration:underline;

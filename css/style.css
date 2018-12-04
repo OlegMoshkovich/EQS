@@ -9,7 +9,8 @@ html {
   font-size: 62.5%; }
 
 body {
-  box-sizing: border-box; }
+  box-sizing: border-box;
+  padding: 2rem; }
 
 @keyframes moveInLeft {
   0% {
@@ -296,6 +297,20 @@ body {
   text-align: center;
   z-index: 1; }
 
+.input {
+  width: 20rem;
+  height: 2rem;
+  font-size: 70%;
+  margin: 0 auto;
+  border: none;
+  /* <-- This thing here */
+  border: solid 1px #ccc;
+  border-radius: 10px;
+  text-align: center; }
+
+textarea:focus, input:focus {
+  outline: none; }
+
 .header {
   height: 100vh;
   background-size: cover;
@@ -356,7 +371,35 @@ body {
 .navigation__title {
   position: absolute;
   top: 6.5rem;
-  left: 10rem;
+  left: 10%;
+  font-size: 2rem;
+  z-index: 100; }
+
+.navigation__search {
+  font-size: 1.5rem;
+  color: #000;
+  position: fixed;
+  bottom: 4.0rem;
+  left: 43%;
+  text-align: 'center';
+  font-size: 2rem;
+  z-index: 100; }
+  .navigation__search::after {
+    content: "";
+    display: table;
+    clear: both; }
+
+.navigation__description {
+  position: absolute;
+  top: 6.5rem;
+  left: 10%;
+  font-size: 2rem;
+  z-index: 100; }
+
+.navigation__description_image {
+  position: absolute;
+  top: 9.5rem;
+  left: 10%;
   font-size: 2rem;
   z-index: 100; }
 
@@ -388,7 +431,7 @@ body {
   color: #fff;
   position: absolute;
   top: 2.2rem;
-  left: 1.05rem; }
+  left: 2rem; }
   .navigation__icon-close {
     font-size: 1.5rem;
     color: #fff;
@@ -448,7 +491,8 @@ body {
   padding: 1rem;
   font-size: 3rem;
   font-weight: 100;
-  list-style-type: none; }
+  list-style-type: none;
+  cursor: pointer; }
   .navigation__item:hover {
     text-decoration: underline; }
 
@@ -471,7 +515,9 @@ body {
 .navigation__checkbox:checked + .navigation__button .navigation__icon-close {
   display: inline; }
 
-.map {
-  padding-top: 20rem;
-  width: 100vh;
-  height: 75vw; }
+#map {
+  position: absolute;
+  right: 0%;
+  left: 0%;
+  top: 0%;
+  bottom: 0%; }
