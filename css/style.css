@@ -131,9 +131,9 @@ body {
 
 .end {
   padding: 4rem;
-  color: #0029FF;
-  font-weight: 700;
-  text-align: center; }
+  color: white;
+  background-color: #0029FF;
+  text-align: 'center'; }
 
 .btn:link, .btn:visited {
   text-transform: uppercase;
@@ -367,38 +367,41 @@ body {
 
 .navigation__button {
   font-size: 1.5rem;
-  color: #fff;
+  color: #000;
   position: fixed;
   top: 3.9rem;
   right: 10rem;
-  background-color: red;
+  background-color: #000;
   z-index: 102;
   border-radius: 50%;
+  border-color: #000;
   height: 6.5rem;
   width: 6.5rem;
   -webkit-touch-callout: none;
   user-select: none;
-  text-align: center; }
+  text-align: 'center'; }
+  .navigation__button:hover {
+    background-color: #fff; }
 
 .navigation__icon {
   font-size: 1.5rem;
   color: #fff;
   position: absolute;
   top: 2.2rem;
-  left: 2.2rem; }
+  left: 1.05rem; }
   .navigation__icon-close {
     font-size: 1.5rem;
     color: #fff;
     position: absolute;
     top: 2.2rem;
-    left: 1.7rem;
+    left: 1.65rem;
     display: none; }
 
 .navigation__background {
   height: 6.5rem;
   width: 6.5rem;
   border-radius: 50%;
-  background-color: #0029FF;
+  background-color: white;
   position: fixed;
   top: 6.5rem;
   right: 10rem;
@@ -418,7 +421,7 @@ body {
 .navigation__list {
   text-decoration: none;
   list-style: none;
-  text-align: center;
+  text-align: left;
   position: absolute;
   top: 50%;
   left: 50%;
@@ -441,7 +444,13 @@ body {
   background-color: red; }
 
 .navigation__item {
-  padding: 1rem; }
+  width: 15rem;
+  padding: 1rem;
+  font-size: 3rem;
+  font-weight: 100;
+  list-style-type: none; }
+  .navigation__item:hover {
+    text-decoration: underline; }
 
 .navigation__checkbox:checked ~ .navigation__background {
   transform: scale(80); }
@@ -451,10 +460,18 @@ body {
   opacity: 1; }
 
 .navigation__button:hover .navigation__icon {
-  left: 2.2rem; }
+  color: #000; }
+
+.navigation__button:hover .navigation__icon-close {
+  color: #000; }
 
 .navigation__checkbox:checked + .navigation__button .navigation__icon {
   display: none; }
 
 .navigation__checkbox:checked + .navigation__button .navigation__icon-close {
   display: inline; }
+
+.map {
+  padding-top: 20rem;
+  width: 100vh;
+  height: 75vw; }
