@@ -46,17 +46,17 @@
               <div class="row" >
                 <div class="col-1-of-2">
                   <ul >
-                    <li class="navigation__item">New York</li>
-                    <li class="navigation__item">Tokyo</li>
-                    <li class="navigation__item">Zurich</li>
+                    <li class="navigation__item" id = "newyork"><label for="navi-toggle">New York<label></li>
+                    <li class="navigation__item" id = "tokyo"><label for="navi-toggle">Tokyo<label></li>
+                    <li class="navigation__item" id = "zurich"><label for="navi-toggle">Zurich<label></li>
                   </ul>
                 </div>
 
                 <div class="col-1-of-2">
                   <ul >
-                    <li class="navigation__item">Paris</li>
-                    <li class="navigation__item">Berlin</li>
-                    <li class="navigation__item">London</li>
+                    <li class="navigation__item" id = "paris"><label for="navi-toggle">Paris<label></li>
+                    <li class="navigation__item" id = "berlin"><label for="navi-toggle">Berlin<label></li>
+                    <li class="navigation__item" id = "london"><label for="navi-toggle">London<label></li>
                   </ul>
                 </div>
               </div>
@@ -74,14 +74,31 @@
         <div id='map'></div>
 
         <script>
-        mapboxgl.accessToken = 'pk.eyJ1Ijoib2xlZ21vc2hrb3ZpY2giLCJhIjoiY2pmeTFidnQzMGUwaDMycTd6aGlseXF6ayJ9._4zzVy5_Q5lPjIiN56SMyQ';
-        const map = new mapboxgl.Map({
-        container: 'map',
-        style: 'mapbox://styles/olegmoshkovich/cjpac1bs09b7w2ro70qt24lna',
-        center: [-73.985861, 40.7370135],
-        zoom: 7.4
+        var coordinates = [-73.985861,40.7370135];
+        const naviagtionList = document.querySelectorAll('.navigation__item');
+        naviagtionList.forEach(element => {
+          element.addEventListener('click', () => fly());
         });
-                </script>
+
+        function fly(){
+          map.flyTo({
+          center: [
+              -74.50 + (Math.random() - 0.5) * 10,
+              40 + (Math.random() - 0.5) * 10]
+        });
+
+        }
+
+          mapboxgl.accessToken = 'pk.eyJ1Ijoib2xlZ21vc2hrb3ZpY2giLCJhIjoiY2pmeTFidnQzMGUwaDMycTd6aGlseXF6ayJ9._4zzVy5_Q5lPjIiN56SMyQ';
+
+          const map = new mapboxgl.Map({
+          container: 'map',
+          style: 'mapbox://styles/olegmoshkovich/cjpac1bs09b7w2ro70qt24lna',
+          center: [coordinates[0],coordinates[1]],
+          zoom: 7.4
+          });
+
+        </script>
     </body>
 
 </html>

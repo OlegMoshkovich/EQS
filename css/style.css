@@ -306,7 +306,8 @@ body {
   /* <-- This thing here */
   border: solid 1px #ccc;
   border-radius: 10px;
-  text-align: center; }
+  text-align: center;
+  font-weight: 100; }
 
 textarea:focus, input:focus {
   outline: none; }
@@ -373,7 +374,8 @@ textarea:focus, input:focus {
   top: 6.5rem;
   left: 10%;
   font-size: 2rem;
-  z-index: 100; }
+  z-index: 100;
+  font-weight: 100; }
 
 .navigation__search {
   font-size: 1.5rem;
@@ -394,6 +396,7 @@ textarea:focus, input:focus {
   top: 6.5rem;
   left: 10%;
   font-size: 2rem;
+  font-weight: 100;
   z-index: 100; }
 
 .navigation__description_image {
@@ -431,14 +434,16 @@ textarea:focus, input:focus {
   color: #fff;
   position: absolute;
   top: 2.2rem;
-  left: 2rem; }
+  left: 2rem;
+  font-weight: 100; }
   .navigation__icon-close {
     font-size: 1.5rem;
     color: #fff;
     position: absolute;
     top: 2.2rem;
-    left: 1.65rem;
-    display: none; }
+    left: 1.55rem;
+    display: none;
+    font-weight: 100; }
 
 .navigation__background {
   height: 6.5rem;
