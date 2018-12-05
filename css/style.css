@@ -391,18 +391,31 @@ textarea:focus, input:focus {
     display: table;
     clear: both; }
 
+.navigation__insta {
+  font-size: 1.5rem;
+  color: #000;
+  position: fixed;
+  bottom: 4.0rem;
+  left: 49%;
+  text-align: 'center';
+  font-size: 2rem;
+  z-index: 100; }
+  .navigation__insta::after {
+    content: "";
+    display: table;
+    clear: both; }
+
 .navigation__description {
   position: absolute;
+  color: white;
   top: 6.5rem;
   left: 10%;
   font-size: 2rem;
-  font-weight: 100;
+  font-weight: 200;
   z-index: 100; }
 
 .navigation__description_image {
-  position: absolute;
-  top: 9.5rem;
-  left: 10%;
+  top: 50%;
   font-size: 2rem;
   z-index: 100; }
 
@@ -441,7 +454,7 @@ textarea:focus, input:focus {
     color: #fff;
     position: absolute;
     top: 2.2rem;
-    left: 1.55rem;
+    left: 1.8rem;
     display: none;
     font-weight: 100; }
 
@@ -497,6 +510,7 @@ textarea:focus, input:focus {
   font-size: 3rem;
   font-weight: 100;
   list-style-type: none;
+  color: white;
   cursor: pointer; }
   .navigation__item:hover {
     text-decoration: underline; }
