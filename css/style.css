@@ -428,19 +428,19 @@ textarea:focus, input:focus {
   font-size: 1.5rem;
   color: #000;
   position: fixed;
-  top: 3.9rem;
-  right: 10rem;
-  background-color: #000;
+  top: 6.0rem;
+  right: 12rem;
+  background-color: black;
   z-index: 102;
   border-radius: 50%;
-  border-color: #000;
-  height: 6.5rem;
-  width: 6.5rem;
+  border-color: black;
+  height: 3rem;
+  width: 3rem;
   -webkit-touch-callout: none;
   user-select: none;
   text-align: 'center'; }
   .navigation__button:hover {
-    background-color: #fff; }
+    background-color: white; }
 
 .navigation__icon {
   font-size: 1.5rem;

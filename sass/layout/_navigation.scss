@@ -61,7 +61,7 @@
   };
   &__button{
     font-size: 1.5rem;
-    color:$color-black;
+    // color:$color-black;
     position:fixed;
     top:3.9rem;
     right:10rem;
@@ -69,8 +69,8 @@
     z-index: 102;
     border-radius: 50%;
     border-color: $color-black;
-    height:6.5rem;
-    width:6.5rem;
+    height:2.5rem;
+    width:2.5rem;
     -webkit-touch-callout: none;
      user-select: none;
     text-align: 'center';
@@ -88,7 +88,7 @@
 
     &-close{
       font-size: 1.5rem;
-      color:$color-white;
+      color:green;
       position:absolute;
       top:2.2rem;
       left:1.8rem;
