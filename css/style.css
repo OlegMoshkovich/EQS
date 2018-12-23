@@ -426,7 +426,7 @@ textarea:focus, input:focus {
 
 .navigation__button {
   font-size: 1.5rem;
-  color: #000;
+  color: lightgrey;
   position: fixed;
   top: 6.0rem;
   right: 12rem;
@@ -487,6 +487,17 @@ textarea:focus, input:focus {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%); }
+
+.credit{
+  position:absolute;
+  bottom: 2rem;
+  left: 10%;
+  max-width:100rem;
+  color:white;
+  font-family: "Helvetica", sans-serif;
+  font-weight: 100;
+  font-size: 1rem;
+}
 
 .navigation__link:link, .navigation__linkvisited {
   font-size: 3rem;
