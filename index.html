@@ -46,28 +46,26 @@
         <div id='map'></div>
 
         <script>
-        const images = ['url(../img/horse_lover.png)','url(../img/fog.png)']
-        let counter=0;
-        let click=0;
+        const images = ['url(../img/horse_lover.png)','url(../img/fog.png)','url(../img/horses-beauty.png)','url(../img/horses-pack.png)','url(../img/horse-lover-2.png)']
+
+        const imageCycle = () => {
+          const imageRandom =  Math.floor(Math.random()*images.length);
+          document.querySelector('.navigation__nav').style.backgroundImage=images[imageRandom]
+        }
 
         document.querySelector('.navigation__button').addEventListener('click',()=>{
-          click++
-          console.log('click',click)
-          console.log('counter',counter)
-          document.querySelector('.navigation__nav').style.backgroundImage=images[counter];
-          if(click%2 == 0){
-             counter ++;
-           }
-          if(counter == images.length){
-            counter = 0
-           }
-
+          imageCycle();
         })
 
         var coordinates = [-73.985861,40.7370135];
         const naviagtionList = document.querySelectorAll('.navigation__item');
         naviagtionList.forEach(element => {
-          element.addEventListener('click', () => fly());
+          element.addEventListener('click', () => {
+            imageCycle();
+            fly();
+
+          }
+            );
         });
 
         function fly(){

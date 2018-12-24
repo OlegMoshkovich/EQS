@@ -473,7 +473,7 @@ textarea:focus, input:focus {
   transition: transform .01s; }
 
 .navigation__nav {
-  background-color: blue;
+  /* background-color: blue; */
   background-image: url(../img/fog.png);
   background-size:cover;
   background-position: center;
