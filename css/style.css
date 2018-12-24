@@ -125,6 +125,7 @@ body {
   width: 114rem;
   height: 100%; }
 
+
 .link {
   background-color: #0029FF;
   text-decoration: none;
@@ -430,17 +431,18 @@ textarea:focus, input:focus {
   position: fixed;
   top: 6.0rem;
   right: 12rem;
-  background-color: black;
+  background-color: white;
   z-index: 102;
   border-radius: 50%;
-  border-color: black;
+  border:1px solid lightgrey;
   height: 3rem;
   width: 3rem;
+  cursor:pointer;
   -webkit-touch-callout: none;
   user-select: none;
   text-align: 'center'; }
   .navigation__button:hover {
-    background-color: white; }
+    background-color: black; }
 
 .navigation__icon {
   font-size: 1.5rem;
@@ -471,6 +473,10 @@ textarea:focus, input:focus {
   transition: transform .01s; }
 
 .navigation__nav {
+  background-color: blue;
+  background-image: url(../img/fog.png);
+  background-size:cover;
+  background-position: center;
   height: 100vh;
   position: fixed;
   top: 0;
@@ -478,6 +484,12 @@ textarea:focus, input:focus {
   z-index: 101;
   width: 0;
   opacity: 0; }
+
+  .image{
+    height:100vh;
+    background-size:cover;
+    background-position: center;
+  }
 
 .navigation__list {
   text-decoration: none;
