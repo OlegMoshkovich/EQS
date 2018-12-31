@@ -12,34 +12,6 @@ body {
   box-sizing: border-box;
   padding: 2rem; }
 
-@keyframes moveInLeft {
-  0% {
-    opacity: 0;
-    transform: translateX(-10rem); }
-  80% {
-    transform: translateX(1rem); }
-  100% {
-    opacity: 100;
-    transform: translateX(0); } }
-
-@keyframes moveInRight {
-  0% {
-    opacity: 0;
-    transform: translateX(20rem); }
-  80% {
-    transform: translateX(-1rem); }
-  100% {
-    opacity: 100;
-    transform: translateX(0); } }
-
-@keyframes moveInTop {
-  0% {
-    opacity: 0;
-    transform: translateY(4rem); }
-  100% {
-    opacity: 100;
-    transform: translateY(0); } }
-
 body {
   font-family: "Helvetica", sans-serif;
   font-weight: 400;
@@ -53,295 +25,6 @@ body {
   color: #282828;
   font-size: 2rem;
   font-weight: 200; }
-
-.heading-primary {
-  color: #000;
-  display: block;
-  width: 70vw;
-  font-size: 6rem;
-  font-weight: 300;
-  letter-spacing: .1rem;
-  backface-visibility: hidden;
-  margin-bottom: 6rem; }
-  .heading-primary--main {
-    display: block;
-    font-size: 4rem;
-    font-weight: 400;
-    letter-spacing: 0rem; }
-  .heading-primary--sub {
-    display: block;
-    font-size: 2rem;
-    font-weight: 700;
-    letter-spacing: 1.74rem; }
-  .heading-primary--project-main {
-    display: block;
-    font-size: 3rem;
-    font-weight: 600;
-    animation-name: moveInRight; }
-  .heading-primary--project {
-    display: block;
-    font-size: 3rem;
-    font-weight: 100;
-    letter-spacing: .1rem;
-    margin-bottom: 6rem; }
-
-.heading-secondary {
-  font-weight: 400;
-  text-transform: uppercase;
-  background-image: linear-gradient(to right, #909090, #282828);
-  display: inline-block;
-  -webkit-background-clip: text;
-  letter-spacing: 2px;
-  color: transparent;
-  transition: all .2s; }
-  .heading-secondary:hover {
-    transform: skewX(15deg);
-    text-shadow: 0.5rem 1rem 20px #777; }
-
-.heading-tertiary {
-  font-size: 1.6rem;
-  font-weight: 700;
-  text-transform: uppercase; }
-
-.paragraph {
-  font-size: 1.4rem;
-  font-weight: 200; }
-  .paragraph:not(:last-child) {
-    margin-bottom: 3rem; }
-
-.u-center-text {
-  text-align: center; }
-
-.u-margin-bottom-big {
-  margin-bottom: 8rem; }
-
-.u-margin-bottom-medium {
-  margin-bottom: 4rem; }
-
-.u-margin-bottom-small {
-  margin-bottom: 1.5rem; }
-
-.overlay {
-  width: 114rem;
-  height: 100%; }
-
-
-.link {
-  background-color: #0029FF;
-  text-decoration: none;
-  color: #fff; }
-
-.end {
-  padding: 4rem;
-  color: white;
-  background-color: #0029FF;
-  text-align: 'center'; }
-
-.btn:link, .btn:visited {
-  text-transform: uppercase;
-  text-decoration: none;
-  padding: 1rem 4rem;
-  display: inline-block;
-  border-radius: 10rem;
-  transition: all .2s;
-  position: relative; }
-
-.btn:hover {
-  transform: translateY(-3px);
-  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2); }
-  .btn:hover::after {
-    transform: scaleX(1.2) scaleY(1.6);
-    opacity: 0; }
-
-.btn:active {
-  transform: translateY(-1px);
-  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2); }
-
-.btn--white {
-  background-color: #fff;
-  color: #777; }
-  .btn--white::after {
-    background-color: #fff; }
-
-.btn::after {
-  content: "";
-  display: inline-block;
-  height: 100%;
-  width: 100%;
-  border-radius: 10rem;
-  position: absolute;
-  top: 0rem;
-  left: 0rem;
-  z-index: -1;
-  transition: all .4s; }
-
-.btn--animated {
-  animation-name: moveInTop;
-  animation-duration: .3s;
-  animation-delay: 1.2s;
-  animation-timing-function: ease-out;
-  animation-fill-mode: backwards; }
-
-.btn-text:link, .btn-text:visited {
-  font-size: 1.6rem;
-  color: #282828;
-  display: inline-block;
-  text-decoration: none;
-  padding: 2px;
-  transition: all .2s; }
-
-.btn-text::after {
-  content: '';
-  display: block;
-  width: 0;
-  height: 1px;
-  background: #000;
-  transition: width .3s; }
-
-.btn-text:hover::after {
-  width: 100%; }
-
-.popup {
-  font-size: 10rem;
-  height: 100vh;
-  width: 100%;
-  position: fixed;
-  top: 0;
-  left: 0;
-  background-color: rgba(0, 0, 0, 0.8);
-  z-index: 1000;
-  text-align: center;
-  opacity: 0;
-  visibility: hidden; }
-  .popup:target {
-    opacity: 1;
-    visibility: visible; }
-  .popup__content {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    width: 75%;
-    height: 75vh;
-    background-color: white;
-    box-shadow: 0 2rem 4rem rgba(0, 0, 0, 0.2);
-    border-radius: 3px; }
-  .popup__img {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    transform: translate(-50%, -60%);
-    display: block;
-    width: 70%; }
-  .popup__text {
-    position: relative;
-    font-size: 2rem;
-    top: 90%; }
-  .popup__close:link, .popup__close:visited {
-    position: absolute;
-    line-height: 1;
-    right: 2rem;
-    top: 1rem;
-    font-size: 5rem;
-    z-index: 100;
-    display: inline-block;
-    text-decoration: none;
-    color: #0029FF;
-    transition: all .2s; }
-  .popup__close:hover {
-    color: red; }
-  .popup__right:link, .popup__right:visited {
-    position: absolute;
-    line-height: 1;
-    right: 2rem;
-    top: 25rem;
-    font-size: 5rem;
-    z-index: 100;
-    display: inline-block;
-    text-decoration: none;
-    color: #0029FF; }
-  .popup__right:hover {
-    color: red; }
-  .popup__left:link, .popup__left:visited {
-    position: absolute;
-    line-height: 1;
-    left: 2rem;
-    top: 25rem;
-    font-size: 5rem;
-    z-index: 100;
-    display: inline-block;
-    text-decoration: none;
-    color: #0029FF; }
-  .popup__left:hover {
-    color: red; }
-
-.section-about {
-  background-color: #f7f7f7;
-  padding: 25rem 0; }
-
-.section-project {
-  background-color: #fff;
-  padding: 0rem 0; }
-
-.work-image {
-  width: 100%; }
-
-.work-image-title {
-  width: 80%;
-  position: relative; }
-
-.work-image-gif {
-  width: 70%; }
-
-.section-open {
-  text-align: center;
-  z-index: 1; }
-
-.input {
-  width: 20rem;
-  height: 2rem;
-  font-size: 70%;
-  margin: 0 auto;
-  border: none;
-  /* <-- This thing here */
-  border: solid 1px #ccc;
-  border-radius: 10px;
-  text-align: center;
-  font-weight: 100; }
-
-textarea:focus, input:focus {
-  outline: none; }
-
-.header {
-  height: 100vh;
-  background-size: cover;
-  background-position: top;
-  position: relative; }
-  .header__logo-box {
-    position: absolute;
-    top: 3rem;
-    left: 10%; }
-  .header__logo {
-    height: 6.5rem; }
-  .header__logo:hover {
-    animation-name: moveInLeft;
-    animation-duration: 3s; }
-  .header__text-box {
-    position: absolute;
-    top: 30%;
-    left: 10%;
-    text-align: left; }
-  .header__project-box {
-    margin-left: 10rem;
-    width: 85vw;
-    left: 50%;
-    text-align: left; }
-  .header__project-box-opening {
-    margin-left: 10rem;
-    width: 85vw;
-    left: 50%;
-    text-align: left; }
 
 .row {
   max-width: 114rem;
@@ -378,19 +61,7 @@ textarea:focus, input:focus {
   z-index: 100;
   font-weight: 100; }
 
-.navigation__search {
-  font-size: 1.5rem;
-  color: #000;
-  position: fixed;
-  bottom: 4.0rem;
-  left: 43%;
-  text-align: 'center';
-  font-size: 2rem;
-  z-index: 100; }
-  .navigation__search::after {
-    content: "";
-    display: table;
-    clear: both; }
+
 
 .navigation__insta {
   font-size: 1.5rem;
@@ -415,10 +86,7 @@ textarea:focus, input:focus {
   font-weight: 200;
   z-index: 100; }
 
-.navigation__description_image {
-  top: 50%;
-  font-size: 2rem;
-  z-index: 100; }
+
 
 .navigation__checkbox {
   position: fixed;
@@ -431,7 +99,7 @@ textarea:focus, input:focus {
   position: fixed;
   top: 6.0rem;
   right: 12rem;
-  background-color: white;
+  background-color: black;
   z-index: 102;
   border-radius: 50%;
   border:1px solid lightgrey;
@@ -442,23 +110,8 @@ textarea:focus, input:focus {
   user-select: none;
   text-align: 'center'; }
   .navigation__button:hover {
-    background-color: black; }
+    background-color: white; }
 
-.navigation__icon {
-  font-size: 1.5rem;
-  color: #fff;
-  position: absolute;
-  top: 2.2rem;
-  left: 2rem;
-  font-weight: 100; }
-  .navigation__icon-close {
-    font-size: 1.5rem;
-    color: #fff;
-    position: absolute;
-    top: 2.2rem;
-    left: 1.8rem;
-    display: none;
-    font-weight: 100; }
 
 .navigation__background {
   height: 6.5rem;
@@ -563,3 +216,20 @@ textarea:focus, input:focus {
   left: 0%;
   top: 0%;
   bottom: 0%; }
+
+.mapboxgl-popup-content {
+ border-radius: 1rem;
+  width: 30rem;
+  height:20rem;
+}
+
+.mapboxgl-popup-close-button {
+  background-color: lightgrey;
+  padding:2px 4px 2px 4px;
+  border-radius: 50%;
+  display: block;
+  position:fixed;
+  top:1rem;
+  right:1rem;
+  color:red;
+}

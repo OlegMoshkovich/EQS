@@ -12,13 +12,13 @@
         <link rel="shortcut icon" type="image/png" href="img/favicon1.png">
         <title>EQS</title>
     </head>
+
     <body>
         <div class="navigation">
-          <div class="navigation__title">EQS</div>
-
-          <input type="checkbox" class="navigation__checkbox" id = 'navi-toggle'>
-          <label for="navi-toggle" class="navigation__button"></label>
-          <div class="navigation__nav">
+        <div class="navigation__title">EQS</div>
+        <input type="checkbox" class="navigation__checkbox" id = 'navi-toggle'>
+        <label for="navi-toggle" class="navigation__button"></label>
+        <div class="navigation__nav">
             <div class = "navigation__list">
               <div class="row" >
                 <div class="col-1-of-2">
@@ -43,84 +43,10 @@
             </div>
             <div class = "navigation__description">EQS </div>
           </div>
+
         <div id='map'></div>
-
-        <script>
-        const images = ['url(../img/horse_lover.png)','url(../img/fog.png)','url(../img/horses-beauty.png)','url(../img/horses-pack.png)','url(../img/horse-lover-2.png)']
-
-        const imageCycle = () => {
-          const imageRandom =  Math.floor(Math.random()*images.length);
-          document.querySelector('.navigation__nav').style.backgroundImage=images[imageRandom]
-        }
-
-        document.querySelector('.navigation__button').addEventListener('click',()=>{
-          imageCycle();
-        })
-
-        var coordinates = [-73.985861,40.7370135];
-        const naviagtionList = document.querySelectorAll('.navigation__item');
-        naviagtionList.forEach(element => {
-          element.addEventListener('click', () => {
-            imageCycle();
-            fly();
-
-          }
-            );
-        });
-
-        function fly(){
-          var city = event.srcElement.textContent;
-          console.log(event.srcElement.textContent)
-          if(event.srcElement.textContent === 'New York'){
-            city = 'NewYork';
-          }
-          var location = {
-            NewYork:[-73.985861,40.7370135],
-            Tokyo:[139.78041,35.54843],
-            Zurich:[8.54,47.37861],
-            Paris:[2.320582,48.859489],
-            Berlin:[13.393236,52.504043],
-            London:[-0.1275,51.50722]
-          }
-          console.log(location[city]);
-
-          map.flyTo({
-          center: location[city],
-          zoom: 7
-          });
-
-          }
-
-          mapboxgl.accessToken = 'pk.eyJ1Ijoib2xlZ21vc2hrb3ZpY2giLCJhIjoiY2pmeTFidnQzMGUwaDMycTd6aGlseXF6ayJ9._4zzVy5_Q5lPjIiN56SMyQ';
-
-          const map = new mapboxgl.Map({
-          container: 'map',
-          style: 'mapbox://styles/olegmoshkovich/cjpac1bs09b7w2ro70qt24lna',
-          center: [coordinates[0],coordinates[1]],
-          zoom: 7.4
-          });
-
-
-          map.on('click', function(e) {
-          var features = map.queryRenderedFeatures(e.point, {
-            layers: ['eqs-dataset'] // replace this with the name of the layer
-          });
-
-          if (!features.length) {
-            return;
-          }
-
-          var feature = features[0];
-
-          var popup = new mapboxgl.Popup({ offset: [0, -15] })
-            .setLngLat(feature.geometry.coordinates)
-            .setHTML('<h3>' + feature.properties.title + '</h3><p>' + feature.properties.description + '</p>')
-            .setLngLat(feature.geometry.coordinates)
-            .addTo(map);
-
-          });
-
-        </script>
+        <script src="./js/main.js" ></script>
+        <script src="./js/imageCycle.js" ></script>
     </body>
 
 </html>
