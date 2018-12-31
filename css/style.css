@@ -98,7 +98,7 @@ body {
   color: lightgrey;
   position: fixed;
   top: 6.0rem;
-  right: 12rem;
+  right: 10%;
   background-color: black;
   z-index: 102;
   border-radius: 50%;
@@ -218,18 +218,73 @@ body {
   bottom: 0%; }
 
 .mapboxgl-popup-content {
- border-radius: 1rem;
-  width: 30rem;
+ border-radius: 0rem;
+ border: solid .5px lightgrey;
+  width: 40rem;
   height:20rem;
 }
 
 .mapboxgl-popup-close-button {
-  background-color: lightgrey;
-  padding:2px 4px 2px 4px;
-  border-radius: 50%;
   display: block;
-  position:fixed;
+  position: fixed;
   top:1rem;
   right:1rem;
-  color:red;
+  color:black;
 }
+.mapboxgl-popup-close-button:focus {
+  border : none;
+}
+
+.mapboxgl-popup-close-button:hover {
+  outline:0;
+  background-color: white;
+}
+
+.popup_title{
+  font-family: "Helvetica", sans-serif;
+  font-weight: 100;
+  display:block;
+  font-size: 1.5rem;
+  margin-bottom:1rem;
+  margin-left:1rem;
+  margin-top:1rem;
+}
+.popup_desc{
+  font-size:1rem;
+  font-family: "Helvetica", sans-serif;
+  font-weight: 100;
+  /* border: solid .2px black; */
+  line-height: 1.2rem;
+  width:52%;
+  float:left;
+  display:block;
+  margin-left:1rem;
+  margin-right:1rem;
+  color:black;
+}
+.popup_img{
+  display:inline-block;
+  width:40%;
+  float:right;
+  margin-right:.5rem;
+}
+
+ @media only screen and (min-width: 300px) and (-webkit-device-pixel-ratio: 3) {
+   .row {
+     max-width: 114rem;
+     margin: 0 auto; }
+     .row:not(:last-child) {
+       margin-bottom: 8rem;
+       margin-top: 8rem; }
+     .row::after {
+       content: "";
+       display: table;
+       clear: both; }
+     .row [class^="col-"] {
+       float: left; }
+       .row [class^="col-"]:not(:last-child) {
+         margin-right: 6rem; }
+     .row .col-1-of-2 {
+       width: 10rem }
+
+ }
