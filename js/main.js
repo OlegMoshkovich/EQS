@@ -19,7 +19,7 @@ const map = new mapboxgl.Map({
 
 
 const fly = () => {
-    const city = event.srcElement.textContent;
+    let city = event.srcElement.textContent;
     //new york is the edge case bacause of the space between two words
     if(event.srcElement.textContent === 'New York'){
       city = 'NewYork';
