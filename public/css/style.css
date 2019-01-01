@@ -55,7 +55,7 @@ body {
 
 .navigation__title {
   position: absolute;
-  top: 6.5rem;
+  top: 4.5rem;
   left: 10%;
   font-size: 2rem;
   z-index: 100;
@@ -80,7 +80,7 @@ body {
 .navigation__description {
   position: absolute;
   color: white;
-  top: 6.5rem;
+  top: 4.5rem;
   left: 10%;
   font-size: 2rem;
   font-weight: 200;
@@ -97,7 +97,7 @@ body {
   font-size: 1.5rem;
   color: lightgrey;
   position: fixed;
-  top: 6.0rem;
+  top: 4.0rem;
   right: 10%;
   background-color:#4E4035;
   z-index: 102;
@@ -155,7 +155,7 @@ body {
 
 .credit{
   position:absolute;
-  bottom: 2rem;
+  bottom: 3rem;
   left: 10%;
   max-width:100rem;
   color:white;
