@@ -99,7 +99,7 @@ body {
   position: fixed;
   top: 6.0rem;
   right: 10%;
-  background-color: black;
+  background-color:#4E4035;
   z-index: 102;
   border-radius: 50%;
   border:1px solid lightgrey;
@@ -227,8 +227,8 @@ body {
 .mapboxgl-popup-close-button {
   display: block;
   position: fixed;
-  top:1rem;
-  right:1rem;
+  top:2rem;
+  right:1.5rem;
   color:black;
 }
 .mapboxgl-popup-close-button:focus {
@@ -247,7 +247,7 @@ body {
   font-size: 1.5rem;
   margin-bottom:1rem;
   margin-left:1rem;
-  margin-top:1rem;
+  margin-top:.7rem;
 }
 .popup_desc{
   font-size:1rem;
@@ -258,12 +258,14 @@ body {
   width:52%;
   float:left;
   display:block;
+  margin-top:1rem;
   margin-left:1rem;
   margin-right:1rem;
   color:black;
 }
 .popup_img{
   display:inline-block;
+  margin-top:1rem;
   width:40%;
   float:right;
   margin-right:.5rem;

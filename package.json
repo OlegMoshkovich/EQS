@@ -22,7 +22,9 @@
   },
   "homepage": "https://github.com/OlegMoshkovich/CSS_practice#readme",
   "dependencies": {
+    "express": "^4.16.4",
     "live-server": "^1.2.1",
     "node-sass": "^4.10.0"
-  }
+  },
+  "devDependencies": {}
 }
