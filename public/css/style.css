@@ -297,6 +297,19 @@ body {
      font-size: 2rem;
      z-index: 100;
      font-weight: 100; }
+     .navigation__checkbox {
+       position: fixed;
+       top: 3.5rem;
+       display: none; }
+
+   .navigation__description {
+     position: absolute;
+     color: white;
+     top: 3.5rem;
+     left: 10%;
+     font-size: 2rem;
+     font-weight: 200;
+     z-index: 100; }
 
    .navigation__button {
      font-size: 1.5rem;
@@ -316,5 +329,7 @@ body {
      text-align: 'center'; }
      .navigation__button:hover {
        background-color: white; }
+
+
 
  }
